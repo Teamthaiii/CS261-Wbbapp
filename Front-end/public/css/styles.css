@@ -7,9 +7,13 @@
     transition: all .2s linear;
 }
 body {
-    background-color: #282828;
     height: 100vh;
     width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .container {
     height: 100%;
@@ -25,7 +29,6 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .row {
@@ -37,6 +40,12 @@ body {
     height: auto;
 }
 
+#Info-block {
+    width: 30%;
+    text-align: center;
+    margin-top: 25px;
+}
+
 #Login-text {
     width: 50%;
     font-size: 400%;
@@ -45,8 +54,18 @@ body {
 }
 
 #Login-block {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.39);
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px 0 40px 0;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     height: auto;
+    align-items: center;
+    border-radius: 20px;
 }
 
 #Form-block {
@@ -57,23 +76,40 @@ body {
     height: 100%;
 }
 
+form {
+    width: 70%;
+}
+
 #Form-block h4 {
     font-size: 120%;
     margin: 5% 0 2% 0;
 }
-#Username {
+
+#username {
     width: 100%;
     height: 30px;
     color: rgb(36, 36, 36);
-    border-radius: 5px;
+    outline: none;
 }
 
-#Password {
+#username:hover {
+    box-shadow: 0 0 10px white;
+}
+
+hr{
+    width: 80%;
+}
+
+#password {
     width: 100%;
     height: 30px;
-    color: rgb(36, 36, 36);
-    border-radius: 5px;
-    text-align: center;
+    color: rgba(36, 36, 36, 0.342);
+    text-align: left;
+    outline: none;
+}
+
+#password:hover {
+    box-shadow: 0 0 10px white;
 }
 
 .btn {
@@ -89,4 +125,24 @@ body {
 .btn:hover {
     color: white;
     background-color: #f34344;
+    box-shadow: 0 0 15px #f34344;
+}
+
+#info-text {
+    width: 50%;
+    font-size: 400%;
+    justify-content: center;
+    display: flex;
+}
+
+#logo {
+    margin-top: 50px;
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.39);
+
+}
+
+#logo:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.39);
 }

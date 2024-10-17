@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: all .2s linear;
+}
+body {
+    background-color: #282828;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../img/ezgif-3-7512f959eb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: white; */
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#logout{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#logout:hover{
+    color: #f34344 ;
+    text-shadow: #f34344 0 0 10px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    
+}
+
+#Info-block {
+    display: flex;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.39);
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+#Info-block:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+#Info-block p {
+    color: rgb(255, 255, 255);
+}
+
+#info-text {
+    width: 50%;
+    font-size: 400%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Home {
+    margin-top: 50px;
+    font-size: 70px;
+    font-weight: 600;
+    z-index: 999;
+    text-shadow: 0 0 15px rgba(3, 3, 3, 0.486);
+}
+
+.Home:hover{
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.486);
+}
+
+#Error-message {
+    padding-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+#message {
+    margin-bottom: 5px;
+}
+
+#p-info {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#Mmessage{
+    font-size: 30px;
+    font-weight: 600;
+}

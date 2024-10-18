@@ -26,7 +26,7 @@ function submitLogin() {
             window.location.href = 'home.html';
 
             // แสดงข้อความสำเร็จในแท็บปัจจุบัน
-            messageElement.innerText = 'Login successful! Opening new tab...';
+            messageElement.innerText = 'Login successful!';
         } else {
             // ถ้าล็อกอินไม่สำเร็จ แสดงข้อความผิดพลาด
             messageElement.innerText = 'Login failed. ' + data.message;
